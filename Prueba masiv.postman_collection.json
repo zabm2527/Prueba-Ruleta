@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "d724aaa1-6bc7-4ba8-9d0e-dbc4f284030d",
+		"name": "Prueba masiv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findAllRoulettes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/findAllRoulettes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"findAllRoulettes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addNewRoulette",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ruleta 7\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/addNewRoulette",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"addNewRoulette"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activeRouletteById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 73616\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/activeRouletteById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"activeRouletteById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addNewBet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idRoulette\": \"73616\",\n    \"idUser\": \"11111\",\n    \"bet\": [{\"number\": 34, \"color\":\"1\", \"value\":3000},{\"number\": 11, \"color\":\"1\", \"value\":2000},{\"number\": 26, \"color\":\"1\", \"value\":5000}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/addNewBet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"addNewBet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "closeRouletteById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 73616\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/closeRouletteById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"closeRouletteById"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
